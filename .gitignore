@@ -1,0 +1,36 @@
+.idea/
+.gradle/
+# ===== Android (proyecto en android-app/) =====
+android-app/.gradle/
+android-app/.idea/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+android-app/.cxx/
+android-app/captures/
+android-app/.externalNativeBuild/
+android-app/app/release/
+
+# ===== Spring Boot / Maven (proyectos futuros) =====
+eureka-server/target/
+eureka-server/.idea/
+eureka-server/.mvn/
+pucp-validador-service/target/
+pucp-validador-service/.idea/
+pucp-validador-service/.mvn/
+orquestador-service/target/
+orquestador-service/.idea/
+orquestador-service/.mvn/
+
+# ===== Generales (cualquier subcarpeta) =====
+**/.idea/
+**/build/
+**/target/
+*.iml
+*.apk
+*.aab
+*.log
+
+# ===== Sistema operativo =====
+.DS_Store
+Thumbs.db

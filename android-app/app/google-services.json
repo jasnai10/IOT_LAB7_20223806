@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830587704673",
+    "project_id": "bicipucp-dd8d5",
+    "storage_bucket": "bicipucp-dd8d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830587704673:android:b4c1af58261ce128576120",
+        "android_client_info": {
+          "package_name": "com.example.bicipucp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDErFRBN3N4F2jTxh5Ex90W21YpE6zNQm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
