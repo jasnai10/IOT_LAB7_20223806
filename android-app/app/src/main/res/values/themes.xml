@@ -1,9 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Bicipucp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryDark">@color/brand_primary_dark</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/surface_alt</item>
+        <item name="android:statusBarColor">@color/brand_primary_dark</item>
     </style>
 
     <style name="Theme.Bicipucp" parent="Base.Theme.Bicipucp" />
+
+    <!-- Recorte circular para la foto del carné. -->
+    <style name="CircularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Toolbar de marca: fondo azul corporativo, texto/iconos blancos. -->
+    <style name="Widget.Bicipucp.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/brand_primary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.Material3.Light</item>
+    </style>
 </resources>

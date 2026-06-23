@@ -2,4 +2,26 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Marca / brand -->
+    <color name="brand_primary">#1E3A8A</color>
+    <color name="brand_primary_dark">#152A66</color>
+    <color name="brand_accent">#F97316</color>
+
+    <!-- Estado: ACTIVO (gracia) -->
+    <color name="estado_activo_fg">#047857</color>
+    <color name="estado_activo_bg">#D1FAE5</color>
+    <color name="estado_activo_stroke">#10B981</color>
+
+    <!-- Estado: EXPIRADO -->
+    <color name="estado_expirado_fg">#B91C1C</color>
+    <color name="estado_expirado_bg">#FEE2E2</color>
+    <color name="estado_expirado_stroke">#EF4444</color>
+
+    <!-- Neutros -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#F9FAFB</color>
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="divider">#E5E7EB</color>
 </resources>

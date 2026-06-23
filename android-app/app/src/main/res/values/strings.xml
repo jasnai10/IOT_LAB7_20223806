@@ -1,3 +1,52 @@
 <resources>
-    <string name="app_name">bicipucp</string>
+    <string name="app_name">BiciPUCP</string>
+
+    <!-- Login -->
+    <string name="login_bienvenido">Bienvenido</string>
+    <string name="login_subtitulo">Inicia sesión con tu cuenta PUCP</string>
+    <string name="hint_correo">Correo PUCP</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_ingresar">INGRESAR</string>
+    <string name="btn_ir_registro">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Registro -->
+    <string name="registro_titulo">Afiliación de Campus IoT</string>
+    <string name="registro_subtitulo">Ingresa tus credenciales de alumno</string>
+    <string name="hint_nombre">Nombre Completo</string>
+    <string name="hint_codigo">Código PUCP</string>
+    <string name="hint_pin">PIN Candado IoT</string>
+    <string name="helper_codigo">8 dígitos</string>
+    <string name="helper_pin">4 dígitos</string>
+    <string name="registro_validando">Validando en Spring Boot…</string>
+    <string name="btn_validar_registrar">VALIDAR Y REGISTRAR</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+
+    <!-- Main / máquina de estados -->
+    <string name="chip_en_gracia">EN GRACIA</string>
+    <string name="chip_expirado">EXPIRADO</string>
+    <string name="estado_activo_titulo">Candado IoT energizado</string>
+    <string name="estado_activo_subtitulo">Retire la bicicleta de la estación</string>
+    <string name="estado_expirado_titulo">Candado vuelto a trabar</string>
+    <string name="estado_expirado_subtitulo">Tiempo de gracia expirado</string>
+    <string name="btn_nuevo_desbloqueo">SOLICITAR NUEVO DESBLOQUEO</string>
+    <string name="dialog_pin_titulo">Confirma tu PIN</string>
+    <string name="dialog_confirmar">Confirmar</string>
+    <string name="dialog_cancelar">Cancelar</string>
+
+    <!-- Menú -->
+    <string name="menu_carne">Mi Carné IoT</string>
+    <string name="menu_logout">Cerrar sesión</string>
+
+    <!-- Carné -->
+    <string name="carne_titulo">Mi Carné IoT</string>
+    <string name="carne_credencial">CREDENCIAL VIRTUAL PUCP</string>
+    <string name="carne_btn_subir">SUBIR FOTO</string>
+    <string name="carne_label_alumno">ALUMNO</string>
+    <string name="carne_label_codigo">CÓDIGO</string>
+    <string name="carne_chip_habilitado">HABILITADO</string>
+    <string name="carne_label_url">URL Firebase Storage (DB):</string>
+    <string name="carne_url_vacia">Aún no has subido una foto.</string>
+
+    <!-- Descripciones de accesibilidad -->
+    <string name="cd_foto_credencial">Foto de credencial</string>
 </resources>
