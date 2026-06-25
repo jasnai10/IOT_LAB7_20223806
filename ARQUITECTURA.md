@@ -13,7 +13,7 @@ De los seis patrones de arquitectura presentados en la Diapositiva 2 de la Clase
 * **pucp-validador-service (puerto 8001):** microservicio que ejecuta las reglas de validación de la aplicación (código PUCP y PIN del candado IoT).
 * **orquestador-service (puerto 8080):** se encarga de recibir las solicitudes del cliente Android, invocar al validador vía RestTemplate y Feign, agregar los resultados y enviar la respuesta final con el token de desbloqueo.
 
-Lo que confirma que se trata de un patrón de microservicios y no, por ejemplo, de uno Cliente-Servidor clásico, es que cada servicio se despliega de forma independiente en su propio proceso y puerto, posee responsabilidad única, y la comunicación entre ellos se realiza exclusivamente por API REST sobre HTTP, sin compartir base de datos ni memoria. Adicionalmente, el uso de un servidor de descubrimiento (Eureka) habilita el desacoplamiento y la escalabilidad horizontal característica de este patrón.
+Lo que confirma que se trata de un patrón de microservicios y no, por ejemplo, de uno Cliente-Servidor clásico, es que cada servicio se despliega de forma independiente en su propio proceso y puerto, posee responsabilidad única, y la comunicación entre ellos se realiza exclusivamente por API REST sobre HTTP, sin compartir base de datos ni memoria.
 
 ---
 
@@ -22,5 +22,3 @@ Lo que confirma que se trata de un patrón de microservicios y no, por ejemplo, 
 La restricción **Stateless** de REST establece que cada petición del cliente debe contener toda la información necesaria para ser procesada, sin que el servidor guarde estado de sesión asociado al cliente entre peticiones.
 
 El microservicio `pucp-validador-service` cumple con esta restricción porque no utiliza ninguna base de datos ni mantiene sesiones para registrar información sobre las solicitudes; únicamente utiliza la información (código y PIN) que recibe en cada llamada como parte de la URL (path variables) para procesar la respuesta. No existe la necesidad de consultar una petición previa ni de mantener un paso anterior en el mismo microservicio como ocurriría en una aplicación stateful.
-
-Como consecuencia de este diseño, el validador es además **idempotente** (la misma entrada produce siempre la misma salida), y cualquier instancia replicada del servicio podría atender cualquier petición sin coordinarse con las demás, lo cual habilita la escalabilidad horizontal natural de la arquitectura.
