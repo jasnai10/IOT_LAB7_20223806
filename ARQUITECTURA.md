@@ -14,8 +14,6 @@ De los seis patrones de arquitectura presentados en clase, el patrón arquitect�
 * **pucp-validador-service (puerto 8001):** microservicio que ejecuta las reglas de validación de la aplicación (código PUCP y PIN del candado IoT).
 * **orquestador-service (puerto 8080):** se encarga de recibir las solicitudes del cliente Android, invocar al validador vía RestTemplate y Feign, agregar los resultados y enviar la respuesta final con el token de desbloqueo.
 
-Lo que confirma que se trata de un patrón de microservicios y no, por ejemplo, de uno Cliente-Servidor clásico, es que cada servicio se despliega de forma independiente en su propio proceso y puerto, posee responsabilidad única, y la comunicación entre ellos se realiza exclusivamente por API REST sobre HTTP, sin compartir base de datos ni memoria.
-
 ---
 
 ## 2. Cumplimiento de la restricción "Stateless" del estándar RESTful
