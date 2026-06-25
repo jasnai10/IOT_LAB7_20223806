@@ -1,6 +1,7 @@
 # ARQUITECTURA.md — Laboratorio 7 BiciPUCP
 
 **Alumno:** Jair Sneider Aguilera Inca
+
 **Código:** 20223806
 
 ---
