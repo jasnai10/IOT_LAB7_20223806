@@ -8,7 +8,7 @@
 
 ## 1. Patrón arquitectónico global aplicado
 
-De los seis patrones de arquitectura presentados en la Diapositiva 2 de la Clase 12, el patrón arquitectónico general que aplica esta solución es el de **Microservicios**. Esto se debe a que la aplicación se ha implementado mediante tres servicios autónomos que cooperan a través de la red, cada uno con una responsabilidad delimitada:
+De los seis patrones de arquitectura presentados en clase, el patrón arquitectónico general que aplica esta solución es el de **Microservicios**. Esto se debe a que la aplicación se ha implementado mediante tres servicios autónomos que cooperan a través de la red, cada uno con una responsabilidad delimitada:
 
 * **eureka-server (puerto 8761):** se encarga de mantener un registro de las instancias activas y permitir que los servicios se localicen entre sí dinámicamente.
 * **pucp-validador-service (puerto 8001):** microservicio que ejecuta las reglas de validación de la aplicación (código PUCP y PIN del candado IoT).
